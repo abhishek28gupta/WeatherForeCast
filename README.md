@@ -92,7 +92,6 @@ The app works beautifully on devices of all sizes:
 ## 🔧 Future Enhancements
 
 - 🌍 Geolocation-based weather
-- 🌙 Dark/light theme toggle
 - 🕒 7-day forecast using OpenWeather One Call API
 - 🌐 Multi-language support
 
