@@ -6,7 +6,7 @@ A responsive weather forecast web application built using **HTML**, **CSS**, and
 
 ## 📸 Preview
 
-![Weather App UI](https://github.com/user-attachments/assets/7eec6e0c-80aa-4a97-ac84-eaa3a8d87ec7)  
+![Weather App UI]()  
 
 ---
 
