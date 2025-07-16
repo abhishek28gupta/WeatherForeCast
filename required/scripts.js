@@ -93,3 +93,77 @@ window.addEventListener("load", () => {
         checkweather(lastCity);
     }
 });
+
+// Theme toggle logic
+const themeSwitch = document.getElementById("theme-switch");
+const themeLabel = document.getElementById("theme-label");
+
+// Load from localStorage on page load
+if (localStorage.getItem("theme") === "dark") {
+  document.body.classList.add("dark");
+  themeSwitch.checked = true;
+  themeLabel.textContent = "🌙 Dark Mode";
+}
+
+// On toggle click
+themeSwitch.addEventListener("change", () => {
+  document.body.classList.toggle("dark");
+
+  if (document.body.classList.contains("dark")) {
+    localStorage.setItem("theme", "dark");
+    themeLabel.textContent = "🌙 Dark Mode";
+  } else {
+    localStorage.setItem("theme", "light");
+    themeLabel.textContent = "🌞 Light Mode";
+  }
+});
+const translations = {
+  en: {
+    title: "Weather Forecast",
+    placeholder: "Enter City Name",
+    error: "Invalid City Name",
+    humidity: "Humidity",
+    wind: "Wind Speed",
+    light: "🌞 Light Mode",
+    dark: "🌙 Dark Mode"
+  },
+  hi: {
+    title: "मौसम पूर्वानुमान",
+    placeholder: "शहर का नाम दर्ज करें",
+    error: "अमान्य शहर का नाम",
+    humidity: "नमी",
+    wind: "हवा की गति",
+    light: "🌞 लाइट मोड",
+    dark: "🌙 डार्क मोड"
+  }
+};
+
+const langSelect = document.getElementById("language-select");
+
+// Function to update language
+function updateLanguage(lang) {
+  const t = translations[lang];
+  document.querySelector(".container h1").textContent = t.title;
+  document.querySelector(".search input").placeholder = t.placeholder;
+  document.querySelector(".error h5").textContent = t.error;
+  document.querySelectorAll(".details .col")[0].querySelector("p:last-child").textContent = t.humidity;
+  document.querySelectorAll(".details .col")[1].querySelector("p:last-child").textContent = t.wind;
+
+  // Update theme label too
+  const currentTheme = document.body.classList.contains("dark") ? "dark" : "light";
+  document.getElementById("theme-label").textContent = t[currentTheme];
+}
+
+// Store selected language
+langSelect.addEventListener("change", (e) => {
+  const lang = e.target.value;
+  localStorage.setItem("lang", lang);
+  updateLanguage(lang);
+});
+
+// Load saved language
+window.addEventListener("load", () => {
+  const savedLang = localStorage.getItem("lang") || "en";
+  langSelect.value = savedLang;
+  updateLanguage(savedLang);
+});
