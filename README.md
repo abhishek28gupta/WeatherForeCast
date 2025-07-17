@@ -1,4 +1,4 @@
-<img width="1915" height="905" alt="image" src="https://github.com/user-attachments/assets/608d5036-2158-43e8-8737-ad384b39917e" /># 🌤️ Weather Forecast App
+# 🌤️ Weather Forecast App
 
 A responsive weather forecast web application built using **HTML**, **CSS**, and **JavaScript**, powered by the **OpenWeatherMap API**. The user can enter any city name and instantly view live weather information including temperature, humidity, wind speed, and weather conditions.
 
