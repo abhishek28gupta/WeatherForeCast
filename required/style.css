@@ -264,9 +264,10 @@ body.dark .slider:before {
   }
 
   .container h1 {
-    margin-top: -10px;
-    font-size: 35px;
+    margin-top: -13px;
+    font-size: 33px;
     padding: 20px 0;
+    margin-bottom: 15px;
   }
 
   .search {
