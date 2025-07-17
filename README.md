@@ -91,14 +91,17 @@ The app works beautifully on devices of all sizes:
 
 ## 🔧 Future Enhancements
 
-- 🌍 Geolocation-based weather
-- 🕒 7-day forecast using OpenWeather One Call API
-- 🌐 Multi-language support
+-🌍 Geolocation-based weather detection
+-📅 7-day weather forecast using OpenWeather One Call API
+-📍 City suggestions/autocomplete
+
+
 
 ---
 
 ## 🙋 Author
 
-**Abhishek Gupta**  
+**Abhishek Gupta**
+🔗 GitHub Profile
 
 ---
