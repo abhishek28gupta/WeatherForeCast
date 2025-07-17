@@ -6,7 +6,7 @@ A responsive weather forecast web application built using **HTML**, **CSS**, and
 
 ## 📸 Preview
 
-![Weather App UI]()  
+![Weather App UI](https://github.com/abhishek28gupta/WeatherForeCast/blob/main/required/Screenshot%202025-07-17%20103408.png?raw=true)  
 
 ---
 
