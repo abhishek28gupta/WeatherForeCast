@@ -91,9 +91,11 @@ The app works beautifully on devices of all sizes:
 
 ## 🔧 Future Enhancements
 
--🌍 Geolocation-based weather detection
--📅 7-day weather forecast using OpenWeather One Call API
--📍 City suggestions/autocomplete
+- 🌍 Geolocation-based weather detection
+
+- 📅 7-day weather forecast using OpenWeather One Call API
+  
+- 📍 City suggestions/autocomplete
 
 ---
 
