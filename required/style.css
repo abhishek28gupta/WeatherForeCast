@@ -70,7 +70,7 @@ body {
 
 .icon {
   width: 170px;
-  margin-top: 30px;
+  margin-top: 10px;
 }
 
 .weather h1 {
@@ -125,7 +125,7 @@ body {
 .top-bar {
   display: flex;
   justify-content: flex-end;
-  padding: 10px 20px;
+  padding: 5px 15px;
 }
 
 .right-controls {
@@ -256,11 +256,11 @@ body.dark .slider:before {
   }
 }
 
-@media (max-width: 505px) {
+@media (max-width: 515px) {
   .container {
     width: 90%;
-    padding: 20px;
-    margin: 30px auto;
+    padding: 15px;
+    margin: 1px auto;
   }
 
   .container h1 {
